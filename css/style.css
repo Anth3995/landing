@@ -3,11 +3,11 @@ body,
 header,
 .view {
   height: 100%;
-  background-image: url(../img/customers/all_customers.jpg);
+  background-image: url(../img_/customers/all_customers.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: center;
+  /* background-attachment: fixed; */
 }
 
 @media (max-width: 740px) {
