@@ -7,9 +7,53 @@ html,body,header, #intro{
 body,
 header, */
 
+/*#rev {
+    height: 100%;
+    background-image: url(../img_/customers/all_customers.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+*/
+.img {
+    height: 100px;
+    width: 100px
+}
+
+.how-we-work {
+    background-color: #f5ea1d;
+    border-radius: 20px
+}
+
+.text-dec {
+    font-family: cosmic;
+    font-weight: bold;
+    font-size: 240%;
+    color: red;
+}
+
+.font-ac {
+    font-family: cosmic;
+    font-weight: bold;
+    text-decoration: line-through red;
+    font-size: 200%;
+}
+
+.btn-circle {
+    background-color: #e01225;
+    border-radius: 30px;
+}
+
+
+.btn:hover {
+  background-color: #ff0018;
+  cursor: pointer;
+}
+
 #intro {
-  /* height: 100%; */
-  background-image: url(../img_/customers/all_customers.jpg);
+   /*height: 100%;*/
+  background-image: url(../img_/backGround.jpg);
   /* background-color: red; */
   background-repeat: no-repeat;
   background-size: contain;
