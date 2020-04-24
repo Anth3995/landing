@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding"> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>RG</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img_/eyeglass.svg" type="image/x-icon">
+  <link rel="icon" href="img/svg/eyeglass.svg" type="image/x-icon">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -18,7 +20,7 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
-
+  <!-- Slick.js -->
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
@@ -37,11 +39,10 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+
               <ul class="navbar-nav mr-auto">
-              <!--  <li class="nav-item">
-                  <a class="nav-link" href="#Order">Заказ<span class="sr-only">(current)</span></a>
-                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="#Products">Товар</a>
                 </li>
@@ -53,17 +54,23 @@
                   </li>
               </ul>
 
-              <ul class="navbar-nav ml-auto nav-flex-icons">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link waves-effect waves-light">
                     <i class="fas fa-envelope"></i>
-                        <span class="text-bold">site@gmail.com</span>
+                        <span class="text-bold">rebook244@gmail.com</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light">
                         <i class="fas fa-phone-alt"></i>
-                        <span class="text-bold">+380234945890</span>
+                        <span class="text-bold">+380975763339</span>
+                    </a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="text-bold">+380638578246</span>
                     </a>
                 </li>
               </ul>
@@ -108,7 +115,7 @@
         <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <form id="form" class="modal-content">
                     <div class="modal-header text-center">
                         <h4 class="modal-title w-100 font-weight-bold">Свяжитесь с нами</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -119,19 +126,19 @@
                     <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <i class="fas fa-user prefix grey-text"></i>
-                            <input type="text" id="form34" class="form-control validate">
+                            <input type="text" name="name" id="form34" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="form34">Ваше имя</label>
                         </div>
 
                         <div class="md-form mb-5">
                             <i class="fas fa-envelope prefix grey-text"></i>
-                            <input type="email" id="form29" class="form-control validate">
+                            <input type="email" name="email" id="form29" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="form29">Ваш email</label>
                         </div>
 
                         <div class="md-form mb-5">
                             <i class="fas fa-phone-alt prefix grey-text"></i>
-                            <input type="text" id="form32" class="form-control validate">
+                            <input type="text" name="number" id="form32" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="form32">Ваш номер</label>
                         </div>
 
@@ -149,12 +156,12 @@
                     </div>
 
                     <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-circle btn-success">
+                        <button type="submit" class="btn btn-circle btn-success">
                             Подтвердить
                             <i class="fas fa-paper-plane-o ml-1"></i>
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
@@ -227,45 +234,78 @@
         </div>
 
 
+        <div class="container text-center animated wow fadeInUp" id="Order">
+            <a class="btn mb-4 waves-effect btn-circle"
+                data-toggle="modal" data-target="#modalContactForm">
+            <span class="white-text h4">сделать заказ</span>
+            </a>
+        </div>
+
     <div class="container">
         <hr style="border-color: grey; border-style: solid none; ">
     </div>
 
 
-    <div class="row" id="Products">
+    <div class="row justify-content-around" id="Products">
 
-            <div class="col-12 col-md-4 p-1 view overlay zoom animated wow fadeInRight">
-                <div class="col-12 text-center">
+            <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
+                <!-- <div class="col-12 text-center"> -->
 
-                    <a class="btn z-depth-0" style="background-color: white"
+                    <a class="btn z-depth-0 p-0 m-0" style="background-color: white"
                         data-toggle="modal" data-target="#modalContactForm">
-                        <img src="img_/products/new-glass2.jpg"
+                        <img src="img/products/blue-glass.jpg"
                             class="rounded mx-auto d-block img-fluid" alt="image">
                     </a>
-                </div>
+                <!-- </div> -->
 
-                <div class="col-12 py-2 text-center">
+<!--                 <div class="col-12 py-2 text-center">
                     <h3 class="font-weight-bold text-primary">Blue Color</h3>
-                </div>
+                </div> -->
             </div>
 
 
-            <div class="col-12 col-md-4 p-1 view overlay zoom animated wow fadeInRight">
-                <div class="col-12 text-center">
+            <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
+                <!-- <div class="col-12 text-center"> -->
 
-                    <a class="btn z-depth-0" style="background-color: white"
+                    <a class="btn z-depth-0 p-0 m-0" style="background-color: white"
                         data-toggle="modal" data-target="#modalContactForm">
-                        <img src="img_/products/brown-glass2.jpg"
+                        <img src="img/products/brown-glass.jpg"
                             class="rounded mx-auto d-block img-fluid" alt="image">
                     </a>
-                </div>
+                <!-- </div> -->
 
-                <div class="col-12 py-2 text-center">
+                <!-- <div class="col-12 py-2 text-center">
                     <h3 class="font-weight-bold brown-text">Brown Color</h3>
-                </div>
+                </div> -->
+            </div>
+                <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
+
+                    <a class="btn z-depth-0 p-0 m-0" style="background-color: white"
+                        data-toggle="modal" data-target="#modalContactForm">
+                        <img src="img/products/yellow-glass2.jpg"
+                            class="rounded mx-auto d-block img-fluid" alt="image">
+                    </a>
+
+                <!-- <div class="col-12 py-2 text-center">
+                    <h3 class="font-weight-bold brown-text">Brown Color</h3>
+                </div> -->
             </div>
 
-            <div class="col-12 col-md-4 p-1 view overlay zoom animated wow fadeInRight">
+                <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
+                <!-- <div class="col-12 text-center"> -->
+
+                    <a class="btn z-depth-0 p-0 m-0" style="background-color: white"
+                        data-toggle="modal" data-target="#modalContactForm">
+                        <img src="img/products/black-glass2.jpg"
+                            class="rounded mx-auto d-block img-fluid" alt="image">
+                    </a>
+                <!-- </div> -->
+
+                <!-- <div class="col-12 py-2 text-center">
+                    <h3 class="font-weight-bold brown-text">Brown Color</h3>
+                </div> -->
+            </div>
+         <!--    <div class="col-12 col-md-4 p-1 view overlay zoom animated wow fadeInRight">
                 <div class="col-12 text-center">
                     <a class="btn z-depth-0" style="background-color: white"
                         data-toggle="modal" data-target="#modalContactForm">
@@ -277,7 +317,7 @@
                 <div class="col-12 py-2 text-center">
                     <h3 class="font-weight-bold text-default">Mix Color</h3>
                 </div>
-            </div>
+            </div> -->
     </div>
 
 
@@ -292,7 +332,7 @@
         <div class="row">
             <div class="col-12 col-md-6 m-1 p-1">
                 <div class="p-2 text-center text-md-right zoom animated wow fadeInLeft">
-                    <img src="img_/products/loot-glass.jpg"
+                    <img src="img/products/loot-glass.jpg"
                       class="rounded mx-auto d-block img-fluid" alt="image">
                 </div>
             </div>
@@ -314,69 +354,40 @@
         </div>
 
 
-        <div class="row justify-content-center animated wow fadeInUp">
-            <div class="col-12 col-md-9 text-center p-2 how-we-work">
-                <p class="h2 ">Как мы работает?</p>
-            </div>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center h2 mb-4 animated wow fadeInUp">Как правильно подобрать цвет линз</div>
+            <div class="col-12 col-md-6 animated wow fadeInLeft">
+                <div class="text-center yellow-text h3">Жёлтые</div>
 
-        <div class="container">
-            <hr style="border-color: grey; border-style: dashed; ">
-        </div>
-
-            <div class="col-12 col-md-4">
-                <div class="container m-3 text-center">
-                    <img src="img_/svg/brief.svg" class="img">
-
-                    <p class="h5 p-1 m-2">Оформление заказа</p>
-
-                    <p>
-                        Вы оформляете заказ на нашем сайте, заполнив все перечисленые поля
-                    </p>
+                <div class="p-2">Улучшают видимость при наличии тумана, в облачную погоду, а также в условиях недостаточного освещения, например, на рассвете и сумерках то есть имеют эффект улучшение контрастности
                 </div>
             </div>
 
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 animated wow fadeInRight">
+                <div class="text-center black-text h3">Тёмные</div>
 
-                <div class="container m-3 text-center">
-                    <img src="img_/svg/business-and-finance.svg" class="img">
-
-                    <p class="h5 p-1 m-2">Звонок</p>
-
-                    <p>
-                        Наш оператор дополнительно перезвонит Вам для подтверждения заказа и запишет адрес
-                    </p>
-                </div>
+                <div class="p-2">Этот цвет практически не искажает восприятия цветов окружающего мира. Мягко действует на глаза, не причиняя вред зрению. Эти очки уместно носить при любой погоде. Имеют особый окрас оправы в красном цвете, что позволяет выделяться среди обычных чёрных очков</div>
             </div>
 
-            <div class="col-12 col-md-4">
-
-                <div class="container m-3 text-center">
-                    <img src="img_/svg/business-and-finance (1).svg" class="img">
-
-                    <p class="h5 p-1 m-2">Отправка</p>
-
-                    <p>
-                        Мы отправляем заказ Новой Почтой. Вы оплачиваете товар при получении или предоплате
-                    </p>
-                </div>
-
+            <div class="col-12 col-md-6 animated wow fadeInLeft">
+                <div class="text-center blue-text h3">Синие</div>
+                <div class="p-2">Эта модель подобна серым очкам, только имеет зеркальное синее напыление. Преимущество зеркальных очков в том, что они полностью отражают солнечные лучи и не нагреваются при любой жаре. Это делает их очень удобными для тех, кому приходится много времени проводить под жарким солнцем. Подходят для любых условий. </div>
             </div>
 
-            <div class="container">
-                <hr style="border-color: grey; border-style: dashed; ">
+            <div class="col-12 col-md-6 animated wow fadeInRight">
+                <div class="text-center brown-text h3">Коричневые</div>
+                <div class="p-2">Поляризационные линзы коричневого цвета рекомендовано носить как при ярком солнце так и при малой облачности Коричневый цвет приятен для глаз, сохраняет высокую контрастность видения и естественные цвета через такие линзы не искажаются. Коричневые очки идеально подходят для рыболовли, для вождения, для отдыха, и для ежедневного ношения в городе
+                </div>
             </div>
         </div>
 
 
-
-        <div class="container text-center animated wow fadeInUp" id="Order">
+        <div class="text-center mt-3 animated wow fadeInUp" id="Order">
             <a class="btn mb-4 waves-effect btn-circle"
                 data-toggle="modal" data-target="#modalContactForm">
                 <span class="white-text h4">сделать заказ</span>
             </a>
         </div>
-
-
 
         <div class="container">
             <hr style="border-color: grey; border-style: solid none; ">
@@ -384,6 +395,11 @@
 
         <div class="container">
         <div class="row"  id="Сharacteristics">
+
+            <div class="col-12 container text-center m-2 animated wow fadeInUp">
+                <h3>Характеристики:</h3>
+            </div>
+
             <div class="col-12 col-md-6 p-1 view overlay zoom animated wow fadeInLeft text-center">
                 <img id="image" src="img/products/size-glass.jpg"
                 class="float-center rounded mx-auto d-block img-fluid" alt="image">
@@ -393,9 +409,7 @@
             <div class="col-12 col-md-5 m-1 p-1 animated wow fadeInRight">
 
                 <div class="col-12 text-left">
-                    <div class="text-center">
-                        <h3>Характеристики:</h3>
-                    </div>
+
 
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Бренд: Reedocks</li>
@@ -415,25 +429,6 @@
             </div>
 
             <div class="col-12 p-2 animated wow fadeInUp">
-                <!-- <p class="">
-                    Даная модель высокого качества, надежная и великолепно защищает глаза от
-                    ультрафиолетового излучения (UV-400), бликов, яркого света
-                    <br>
-                    Поляризация очков позволяет пропускать только вертикальный свет,
-                    блокирует бликовой отраженный свет
-                </p> -->
-
-
-                <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        Даная модель высокого качества, надежная и великолепно защищает глаза от
-                    ультрафиолетового излучения (UV-400), бликов, яркого света
-                    </li>
-                    <li class="list-group-item">
-                        Поляризация очков позволяет пропускать только вертикальный свет,
-                    блокирует бликовой отраженный свет
-                    </li>
-                </ul> -->
 
                 <div class="container">
                     <ul class="list-group list-group-flush">
@@ -471,46 +466,96 @@
         </div>
 
         <div class="row m-1 animated wow fadeInUp">
-            <img src="img_/like1.jpg"
+            <img src="img/view1.jpg"
             class="img-fluid mx-auto d-block" alt="image">
         </div>
 
         <div class="row m-1 animated wow fadeInUp">
-            <img src="img_/like2.jpg"
+            <img src="img/view2.jpg"
             class="img-fluid mx-auto d-block" alt="image">
         </div>
 
-        <div class="row justify-content-center p-4 text-center animated wow fadeInUp" id="Order">
+<!--         <div class="row justify-content-center p-4 text-center animated wow fadeInUp" id="Order">
             <a class="btn mb-4 waves-effect btn-circle"
                 data-toggle="modal" data-target="#modalContactForm">
                 <span class="white-text h4">сделать заказ</span>
             </a>
+        </div> -->
+        <div class="row justify-content-center animated wow fadeInUp mt-5">
+            <div class="col-12 col-md-9 text-center p-2 how-we-work">
+                <p class="h2 ">Как мы работает?</p>
+            </div>
+
+        <div class="container">
+            <hr style="border-color: grey; border-style: dashed; ">
         </div>
 
-        <div class="container m-2">
+            <div class="col-12 col-md-4">
+                <div class="container m-3 text-center">
+                    <img src="img/svg/brief.svg" class="img">
+
+                    <p class="h5 p-1 m-2">Оформление заказа</p>
+
+                    <p>
+                        Вы оформляете заказ на нашем сайте, заполнив все перечисленые поля
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+
+                <div class="container m-3 text-center">
+                    <img src="img/svg/business-and-finance.svg" class="img">
+
+                    <p class="h5 p-1 m-2">Звонок</p>
+
+                    <p>
+                        Наш оператор дополнительно перезвонит Вам для подтверждения заказа и запишет адрес
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+
+                <div class="container m-3 text-center">
+                    <img src="img/svg/business-and-finance (1).svg" class="img">
+
+                    <p class="h5 p-1 m-2">Отправка</p>
+
+                    <p>
+                        Мы отправляем заказ Новой Почтой. Вы оплачиваете товар при получении или предоплате
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <hr style="border-color: grey; border-style: dashed; ">
+            </div>
+        </div>
+
+        <div class="container text-center animated wow fadeInUp" id="Order">
+            <a class="btn mb-4 waves-effect btn-circle"
+                data-toggle="modal" data-target="#modalContactForm">
+            <span class="white-text h4">сделать заказ</span>
+            </a>
+        </div>  
+
+<!--         <div class="container m-2">
                 <hr style="border-color: grey; border-style: solid none; ">
-        </div>
-
-
-
-
-
-
-
-
-
+        </div> -->
 
 
     <div class="row animated wow fadeInUp">
         <div class="col view">
-            <img src="img_/customers/all_customers.jpg"
-                class="rounded mx-auto img-fluid" alt="image">
+            <img src="img/customers/all_customers.jpg"
+                class="rounded mx-auto d-flex img-fluid" alt="image">
             <!-- <div class="mask rgba-black-strong"></div> -->
         </div>
     </div>
 
 
-<div class="row animated wow fadeInUp" id="Reviews">
+    <div class="row animated wow fadeInUp" id="Reviews">
 
                     <div class="col-12 p-2">
                         <div class="card">
@@ -578,24 +623,7 @@
                         </div>
                     </div>
 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 </main>
@@ -606,26 +634,38 @@
 <footer class="page-footer font-small special-color-dark pt-4 animated wow fadeInUp">
 
     <!-- Footer Elements -->
-    <div class="d-flex m-2 p-1 justify-content-around">
-        <div class="d-flex">
-            <a class="btn-floating btn-fb mx-1">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center">
+            <a class="btn-floating btn-fb">
                 <i class="fas fa-envelope"></i>
-                <span class="text-bold">ngsong@gmail.com</span>
+                <span class="text-bold">rebook244@gmail.com</span>
             </a>
         </div>
-        <div class="d-flex">
-            <a class="btn-floating btn-fb mx-1">
-                <i class="fas fa-phone-alt"></i>
-                <span class="text-bold">+890093900</span>
-            </a>
+
+        <div class="col-12 col-md-6 text-center">
+
+            <div class="row">
+            <div class="col col-md-12">
+                <a class="btn-floating btn-fb">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="text-bold">+380975763339</span>
+                </a>
+            </div>
+
+            <div class="col col-md-12">
+                <a class="btn-floating btn-fb">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="text-bold">+380638578246</span>
+                </a>
+            </div>
+            </div>
         </div>
+
     </div>
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
+    <div class="footer-copyright text-center py-3"> </div>
     <!-- Copyright -->
 
   </footer>
@@ -643,6 +683,7 @@
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/timer.js"></script>
+  <script type="text/javascript" src="js/ajax.js"></script>
 <!--
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->

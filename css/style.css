@@ -3,19 +3,6 @@ html,body,header, #intro{
   scroll-behavior: smooth;
 }
 
-/* html,
-body,
-header, */
-
-/*#rev {
-    height: 100%;
-    background-image: url(../img_/customers/all_customers.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-}
-*/
 .img {
     height: 100px;
     width: 100px
@@ -52,9 +39,7 @@ header, */
 }
 
 #intro {
-   /*height: 100%;*/
-  background-image: url(../img_/backGround.jpg);
-  /* background-color: red; */
+  background-image: url(../img/backGround.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -65,15 +50,6 @@ img {
   height: 100%;
   width: 100%;
 }
-
-/* @media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
-} */
 
 .top-nav-collapse {
   background-color: #444444 !important;
@@ -89,31 +65,6 @@ img {
   }
 }
 
-/* .loot-img {
-  background-image: url(../img_/products/loot-glass.jpg);
-  height: 9em;
-  width: 27em;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 911px) {
-  .loot-img {
-    background-image: url(../img_/products/loot-glass.jpg);
-    height: 9em;
-    width: 27em;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: 720px) {
-  .loot-img {
-    background-image: url(../img_/products/vert-loot-glass.jpg);
-    height: 17em;
-    width: 10em;
-    background-repeat: no-repeat;
-  }
-} */
-
 h1 {
   letter-spacing: 8px;
 }
@@ -126,26 +77,3 @@ h5 {
   border-top: 3px solid #fff;
   width: 80px;
 }
-
-
-
-/* html,body,header, #intro{
-    height: 100%;
-    scroll-behavior: smooth;
-} */
-
-/* #intro{ */
-    /* background: url(../img/background-large.jpg) center center; */
-    /* background-image: url(../img/customers/all_customers.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-} */
-/* .top-nav-collapse {
-    background-color: red;
-} */
-
-/* .mar {
-    margin-top: 18%;
-} */
