@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding"> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -30,11 +28,6 @@
     <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-          <!-- <div class="container-fluid d-flex justify-content-center">
-            <div class="text-center">
-                <h2 style="color: white;">Lorem ipsum dolor sit amet.</h2>
-                <hr style="border-color: white; border-style: solid none; ">
-            </div> -->
             <a class="navbar-brand" href="#"><strong></strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -83,21 +76,8 @@
         <div id="intro" class="view">
             <div class="mask rgba-black-strong">
                 <div class="container d-flex justify-content-center h-100">
-                    <!-- <div class="col-md-12 mb-4 white-text text-center"> -->
-                    <div class="row">
+                  <div class="row">
                         <div class="col-md-10 align-self-end mb-5 pb-5">
-                            <!-- <h1 class="h1-reponsive white-text text-uppercase
-                                    font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
-                                data-wow-delay="0.3s">
-                                <strong>Reedocks</strong>
-                            </h1>
-
-                            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-
-                            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s">
-                                <strong>Мужские и женские поляризационные очки</strong>
-                            </h5> -->
-
                             <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s"
                              href="#Products">
                                 Смотреть
@@ -111,6 +91,48 @@
 
     <main class="container">
 
+    <!-- Success Modal -->
+  <div class="modal fade" id="modalOK" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+  
+    <div class="modal-dialog modal-md" role="document">
+  
+  
+      <div class="modal-content">
+        <div class="modal-body text-center my-2 h5">
+          Скоро мы с вами свяжемся!
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-success btn-circle waves-effect py-2 px-5"
+                data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Error modal -->
+  <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+  
+    <div class="modal-dialog modal-md" role="document">
+  
+      <div class="modal-content">
+        
+        <div class="modal-header  d-flex justify-content-center">
+            <p class="h5">Упс<span class="ml-3">:(</span></p>
+        </div>
+        
+        <div class="modal-body text-center my-2 ">
+          Что-то пошло не так, перезвоните нам
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-danger btn-circle waves-effect py-2 px-5"
+                data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
             aria-hidden="true">
@@ -141,17 +163,6 @@
                             <input type="text" name="number" id="form32" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="form32">Ваш номер</label>
                         </div>
-
-                        <!-- <div class="md-form">
-                            <i class="fas fa-pencil prefix grey-text"></i>
-                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-                            <label data-error="wrong" data-success="right" for="form8">Your message</label>
-                        </div> -->
-
-<!--                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
-                            <label class="form-check-label" for="materialUnchecked">Blue</label>
-                        </div> -->
 
                     </div>
 
@@ -245,38 +256,24 @@
         <hr style="border-color: grey; border-style: solid none; ">
     </div>
 
-
     <div class="row justify-content-around" id="Products">
 
             <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
-                <!-- <div class="col-12 text-center"> -->
 
                     <a class="btn z-depth-0 p-0 m-0" style="background-color: white"
                         data-toggle="modal" data-target="#modalContactForm">
                         <img src="img/products/blue-glass.jpg"
                             class="rounded mx-auto d-block img-fluid" alt="image">
                     </a>
-                <!-- </div> -->
-
-<!--                 <div class="col-12 py-2 text-center">
-                    <h3 class="font-weight-bold text-primary">Blue Color</h3>
-                </div> -->
             </div>
 
 
             <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
-                <!-- <div class="col-12 text-center"> -->
-
                     <a class="btn z-depth-0 p-0 m-0" style="background-color: white"
                         data-toggle="modal" data-target="#modalContactForm">
                         <img src="img/products/brown-glass.jpg"
                             class="rounded mx-auto d-block img-fluid" alt="image">
                     </a>
-                <!-- </div> -->
-
-                <!-- <div class="col-12 py-2 text-center">
-                    <h3 class="font-weight-bold brown-text">Brown Color</h3>
-                </div> -->
             </div>
                 <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
 
@@ -286,48 +283,21 @@
                             class="rounded mx-auto d-block img-fluid" alt="image">
                     </a>
 
-                <!-- <div class="col-12 py-2 text-center">
-                    <h3 class="font-weight-bold brown-text">Brown Color</h3>
-                </div> -->
             </div>
 
                 <div class="col-6 col-md-3 view overlay zoom animated wow fadeInRight">
-                <!-- <div class="col-12 text-center"> -->
-
                     <a class="btn z-depth-0 p-0 m-0" style="background-color: white"
                         data-toggle="modal" data-target="#modalContactForm">
                         <img src="img/products/black-glass2.jpg"
                             class="rounded mx-auto d-block img-fluid" alt="image">
                     </a>
-                <!-- </div> -->
-
-                <!-- <div class="col-12 py-2 text-center">
-                    <h3 class="font-weight-bold brown-text">Brown Color</h3>
-                </div> -->
             </div>
-         <!--    <div class="col-12 col-md-4 p-1 view overlay zoom animated wow fadeInRight">
-                <div class="col-12 text-center">
-                    <a class="btn z-depth-0" style="background-color: white"
-                        data-toggle="modal" data-target="#modalContactForm">
-                         <img src="img_/products/mix_color2.jpg"
-                            class="rounded mx-auto d-block img-fluid" alt="image">
-                    </a>
-                </div>
-
-                <div class="col-12 py-2 text-center">
-                    <h3 class="font-weight-bold text-default">Mix Color</h3>
-                </div>
-            </div> -->
     </div>
-
-
 
         <div class="container text-center animated wow fadeInUp">
             <hr style="border-color: grey; border-style: solid none; ">
             <h2 class="h2 red-text" style="font-size: 300%">В Подарок!!!</h2>
         </div>
-
-
 
         <div class="row">
             <div class="col-12 col-md-6 m-1 p-1">
@@ -430,29 +400,77 @@
 
             <div class="col-12 p-2 animated wow fadeInUp">
 
-                <div class="container">
-                    <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        Даная модель высокого качества, надежная и великолепно защищает глаза от
-                    ультрафиолетового излучения (UV-400), бликов, яркого света
-                    </li>
-                    <li class="list-group-item">
-                        Поляризация очков позволяет пропускать только вертикальный свет,
-                    блокирует бликовой отраженный свет
-                    </li>
-                    <li class="list-group-item">
-                        <p>Забудьте про усталость:</p>
-                            <ul >
-                                <li>усталости и утомляемости глаз от яркого солнца (иногда даже в пасмурную погоду);</li>
-                                <li><b>прямое отражение солнца от водной глади;</b></li>
-                                <li><b>солнечные блики на воде в ясный день при легком волнении воды;</b></li>
-                                <li>зеркальность водной поверхности, которая не позволяет четко видеть подводный мир.</li>
+                <div class="container text-center mb-2">
+                    <h3>Преимущества:</h3>
+                </div>
+
+                <div class="container px-md-5">
+                   
+                    <ol>
+                        <li>
+                            Наличие поляризации
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Поляризация очков позволяет пропускать только вертикальный свет, блокируя бликовой отраженный свет
+                                </li>
                             </ul>
-                    </li>
-                    <li class="list-group-item">
-                        <b>Наши очки надежно оградят ваше зрение днем и ночью</b>, глаза не будут больше слезиться и болеть, надобность в каплях и растворах отпадет сама собой. Чайные компрессы по вечерам, неприятное чувство «песка» на слизистых оболочках тоже покинут вашу жизнь.
-                    </li>
-                </ul>
+                        </li>
+                        
+                        <li>
+                            Хорошая защита UV-400 ) от ультрафиолетового излучения
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Поликарбонат блокирует 100% УФ-лучей всех спектров
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            Малый удельный вес
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Очки из поликарбоната очень легкие
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            Термоустойчивость
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Расплавить поликарбонат можно только температурой выше 140°C
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            Безопасность
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Даже если воздействовать на линзы из поликарбоната
+                            с очень большой силой, они деформируются, гнутся,
+                            ломаются, но не разбиваются, что может произойти со стеклами
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            Экологичность
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Поликарбонат может подвергаться вторичной обработке
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Дужки покрыты резиновым материалом
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Это обеспечивает комфортное ношение и предотвращает скольжение
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
 
                 </div>
 
@@ -475,13 +493,13 @@
             class="img-fluid mx-auto d-block" alt="image">
         </div>
 
-<!--         <div class="row justify-content-center p-4 text-center animated wow fadeInUp" id="Order">
-            <a class="btn mb-4 waves-effect btn-circle"
-                data-toggle="modal" data-target="#modalContactForm">
-                <span class="white-text h4">сделать заказ</span>
-            </a>
-        </div> -->
-        <div class="row justify-content-center animated wow fadeInUp mt-5">
+
+        <div class="container my-4">
+            <hr style="border-color: grey; border-style: solid none; ">
+        </div>
+
+
+        <div class="row justify-content-center animated wow fadeInUp mt-2">
             <div class="col-12 col-md-9 text-center p-2 how-we-work">
                 <p class="h2 ">Как мы работает?</p>
             </div>
@@ -534,94 +552,48 @@
             </div>
         </div>
 
-        <div class="container text-center animated wow fadeInUp" id="Order">
-            <a class="btn mb-4 waves-effect btn-circle"
+        <div class="row justify-content-center animated wow fadeInUp" id="Order">
+            <a class="btn waves-effect btn-circle"
                 data-toggle="modal" data-target="#modalContactForm">
             <span class="white-text h4">сделать заказ</span>
             </a>
         </div>  
 
-<!--         <div class="container m-2">
+        <!-- <div class="container m-2">
                 <hr style="border-color: grey; border-style: solid none; ">
         </div> -->
 
 
     <div class="row animated wow fadeInUp">
-        <div class="col view">
+
+        <div class="col-12 d-flex justify-content-center mt-4 mb-0">
+            <p class="h1">Отзывы</p>
+        </div>
+
+        <div class="col-12 view mt-0 mb-4">
             <img src="img/customers/all_customers.jpg"
                 class="rounded mx-auto d-flex img-fluid" alt="image">
-            <!-- <div class="mask rgba-black-strong"></div> -->
         </div>
     </div>
 
 
     <div class="row animated wow fadeInUp" id="Reviews">
 
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="card-body ">
-                                <h4 class="card-title">Михаил</h4>
-                                <p class="card-text">
-                                    Качество очень порадовало. Всё как заявлено. 100% к копуке!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-12 col-md-3">
+            <img class="img-fluid m-1 z-depth-2" src="img/customers/screen1.jpg">
+        </div>
+        
+        <div class="col-12 col-md-3">
+            <img class="img-fluid m-1 z-depth-2" src="img/customers/screen2.jpg">
+        </div>
+        
+        <div class="col-12 col-md-3">
+            <img class="img-fluid m-1 z-depth-2" src="img/customers/screen3.jpg">
+        </div>
 
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="card-body ">
-                                <h4 class="card-title">Михаил</h4>
-                                <p class="card-text">
-                                    Качество очень порадовало. Всё как заявлено. 100% к копуке!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="card-body ">
-                                <h4 class="card-title">Михаил</h4>
-                                <p class="card-text">
-                                    Качество очень порадовало. Всё как заявлено. 100% к копуке!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="card-body ">
-                                <h4 class="card-title">Михаил</h4>
-                                <p class="card-text">
-                                    Качество очень порадовало. Всё как заявлено. 100% к копуке!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="card-body ">
-                                <h4 class="card-title">Михаил</h4>
-                                <p class="card-text">
-                                    Качество очень порадовало. Всё как заявлено. 100% к копуке!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="card-body ">
-                                <h4 class="card-title">Михаил</h4>
-                                <p class="card-text">
-                                    Качество очень порадовало. Всё как заявлено. 100% к копуке!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-12 col-md-3">
+            <img class="img-fluid m-1 z-depth-2" src="img/customers/screen4.jpg">
+        </div>
 
     </div>
 

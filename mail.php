@@ -11,10 +11,6 @@ $pagetitle = "Новая заявка с сайта";
 
 $status = mail($to, $pagetitle, $message, "Content-type:text/plain; charset=\"utf-8\"\n From: $to");
 
-if ($status) {
-    echo "200";
-} else {
-    echo "error";
-}
+echo $status;
 
 ?>
